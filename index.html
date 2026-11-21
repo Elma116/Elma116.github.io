@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的精神自留地</title>
+    <style>
+        /* 这里定义网站的 Vibe：深邃、极简、留白 */
+        :root {
+            --bg-color: #0f0f11; /* 深邃的暗色背景 */
+            --text-main: #e0e0e0; /* 柔和的亮色文字 */
+            --text-muted: #888888; /* 辅助灰色文字 */
+            --accent: #6b8e23; /* 一抹橄榄绿的强调色，代表生机 */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 40px 20px;
+        }
+
+        /* 标题排版 */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 50px;
+            letter-spacing: 1px;
+        }
+
+        /* 模块样式 */
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        /* 书影音列表样式 */
+        .media-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        .media-title {
+            color: var(--text-main);
+        }
+
+        .media-status {
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+
+        /* 链接样式 */
+        a {
+            color: var(--text-main);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+            border-bottom: 1px solid var(--accent);
+        }
+
+        /* 底部声明 */
+        footer {
+            margin-top: 100px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 把你的名字改掉 -->
+        <h1>我的精神自留地</h1>
+        <div class="subtitle">在符号之外，寻找真实的体验。</div>
+
+        <!-- 关于我模块 -->
+        <div class="section">
+            <div class="section-title">关于</div>
+            <p>这里是我的个人网站。我在这里记录思考、观影、阅读，以及那些无法被符号化、无法被 AI 取代的生命体验。</p>
+        </div>
+
+        <!-- 书影音模块（你可以随意修改内容） -->
+        <div class="section">
+            <div class="section-title">近期标记</div>
+            <div class="media-item">
+                <span class="media-title">《维特根斯坦传》</span>
+                <span class="media-status">在读</span>
+            </div>
+            <div class="media-item">
+                <span class="media-title">《银翼杀手 2049》</span>
+                <span class="media-status">看过</span>
+            </div>
+            <div class="media-item">
+                <span class="media-title">《齐马蓝》</span>
+                <span class="media-status">思考中</span>
+            </div>
+        </div>
+
+        <!-- 链接模块 -->
+        <div class="section">
+            <div class="section-title">足迹</div>
+            <p>
+                <a href="#">GitHub</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+                <a href="#">即刻</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+                <a href="#">我的邮箱</a>
+            </p>
+        </div>
+
+        <footer>
+            © 2026. Powered by Vibe Coding.
+        </footer>
+    </div>
+
+</body>
+</html>
